@@ -1,3 +1,398 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
 
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/*div,
+section,
+li,
+nav {
+    border: 1px solid black;
+}*/
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Navbar */
+.hidden-on-dsk {
+    display: none;
+}
+
+nav.hidden-navbar {
+    display: none;
+}
+
+.hidden-navbar a {
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+.navbar {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 105px;
+    align-items: center;
+}
+
+.navbar nav li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    margin-right: 134px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+/* Hero Area */
+.hero-area {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.hero-area h1 {
+    font-size: 100px;
+    width: 40%;
+}
+
+.txtBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txtBtn button {
+    margin-top: 10px;
+    background: white;
+    border: 1px solid black;
+    padding: 5px 40px 5px 40px;
+    font-size: 15px;
+}
+
+/* Main */
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 105px 0 105px;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 50px;
+}
+
+.para h3,
+p {
+    text-align: left;
+}
+
+.para p {
+    width: 70%;
+}
+
+.para2 p {
+    width: 90%;
+}
+
+.para2 h3,
+p {
+    text-align: left;
+}
+
+/* Contact */
+.contact {
+    margin: 0 105px 0 105px;
+}
+
+/* Footer */
+footer {
+    margin: 50px 0 50px 0;
+    padding-bottom: 25px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* hr */
+hr {
+    width: 86.5%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1450px) {
+    .navbar img {
+        display: none;
+    }
+
+    .navbar nav li {
+        margin-right: 140px;
+    }
+
+    .hidden-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .hidden-on-dsk {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar nav li {
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar nav li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .hero-area img {
+        display: none;
+    }
+
+    .hero-area {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .navbar nav li {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .navbar {
+        display: none;
+    }
+
+    nav.hidden-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hidden-navbar a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+
+    .txtBtn {
+        width: 100%;
+    }
+
+    .hero-area h1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bottom {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main {
+        margin: 0 20px 0 20px
+    }
+
+    .contact {
+        margin: 0 20px 20px;
+    }
+
+    .para p {
+        width: 100%;
+    }
+
+    .para2 p {
+        width: 100%;
+    }
+}
